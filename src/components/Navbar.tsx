@@ -8,8 +8,8 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-br from-[#4b2e1c] via-[#201a12] to-black backdrop-blur-md px-4 py-3 fixed w-full z-10">
-      <div className="flex items-center justify-between h-16">
+    <div className="bg-transparent backdrop-blur-md px-4 py-3 fixed w-full z-10">
+      <div className="flex items-center justify-between px-11 py-8 h-16">
         {/* Logo */}
         <div className="flex items-center">
           <Image src={Logo} alt="Coffee Logo" width={50} height={50} />

@@ -2,15 +2,16 @@
 import Image from "next/image";
 import coffeeImage from "../assets/coffee.png"; // Replace with your coffee image
 import { motion } from "framer-motion";
+import TypeWriter from "./TypeWriter";
 
 export const HeroSection = () => {
   return (
-    <div className="relative bg-gradient-to-br from-[#4b2e1c] via-[#201a12] to-black text-white min-h-screen flex items-center justify-center px-4">
+    <div className="relative bg-gradient-radial from-[#1d130d] to-black text-white min-h-screen flex items-center justify-center px-4">
       {/* Background Coffee Vibes */}
       <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/path-to-coffee-beans-background.jpg')" }} />
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-center max-w-7xl mx-auto gap-10">
+      <div className="relative  flex flex-col lg:flex-row items-center max-w-7xl mx-auto gap-10">
         {/* Coffee Image */}
         <motion.div
           className="relative"
@@ -22,7 +23,7 @@ export const HeroSection = () => {
             <Image
               src={coffeeImage}
               alt="Hero Coffee Image"
-              fill
+              
               className="object-cover rounded-full"
             />
           </div>
@@ -30,14 +31,11 @@ export const HeroSection = () => {
 
         {/* Hero Text */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#d4a373] to-[#a87449] animate-pulse"
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
-          >
-            Discover the Magic of Coffee
-          </motion.h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-5 mb-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0ea5ea] to-[#0bd1d1]">
+              <TypeWriter />
+            </span>
+          </h1>
           <motion.p
             className="mt-4 text-lg sm:text-xl text-gray-300 max-w-xl"
             initial={{ x: -20, opacity: 0 }}
