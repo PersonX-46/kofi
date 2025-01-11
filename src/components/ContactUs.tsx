@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { GlareCard } from "./ui/glare-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faCopy } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import MatrixEffect from "./MatrixEffect";
