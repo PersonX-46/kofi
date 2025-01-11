@@ -1,5 +1,5 @@
 'use client';
-import Logo from "../assets/coffee-logo.png"; // Replace with your coffee logo path
+import Logo from "../assets/logo.jpeg"; // Replace with your coffee logo path
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
