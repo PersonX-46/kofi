@@ -21,7 +21,7 @@ const Footer = () => {
               className="w-16 h-16 rounded-full shadow-xl transition-transform duration-300 transform hover:scale-110"
             />
             <h1 className="text-3xl md:text-4xl font-extrabold text-white tracking-widest hover:text-[#D8B99C] transition duration-300">
-              Coffee Haven
+              Mr Kofi
             </h1>
           </div>
           <p className="mt-6 md:mt-0 max-w-lg text-sm text-gray-400 opacity-80 hover:opacity-100 transition duration-300">
@@ -112,7 +112,7 @@ const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="w-full border-t  border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center text-center text-sm">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Coffee Haven. All rights reserved.
+            © {new Date().getFullYear()} MrKofi. All rights reserved.
           </p>
           <p className="text-gray-400 mt-2 md:mt-0">
             Designed with ☕ and ❤️ by Coffee Enthusiasts.

@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { GlareCard } from "./ui/glare-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faCopy } from "@fortawesome/free-solid-svg-icons";
-import { faTelegram } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import faSession from "../assets/sessionIcon.png";
 import MatrixEffect from "./MatrixEffect";
@@ -71,77 +72,53 @@ const ContactUs: React.FC = () => {
             <MatrixEffect />
               <div className="flex flex-col items-center">
                 <FontAwesomeIcon
-                  icon={faTelegram}
+                  icon={faPhone}
                   className="w-10 h-10 sm:w-12 sm:h-12 hover:scale-110 transition transform"
                 />
-                <h3 className="text-xl font-semibold mt-4 mb-2">Telegram</h3>
+                <h3 className="text-xl font-semibold mt-4 mb-2">Phone Number</h3>
                 <p className="text-gray-300 text-center">
                   Reach out to me on Telegram for quick support.
                 </p>
               </div>
-              <h3 className="font-bold mt-5"> Telegram ID: </h3>
+              <h3 className="font-bold mt-5"> Phone Numbers: </h3>
               <a
-                href="https://t.me/Thelonelyblogger"
-                className="block mt-1 text-[#fdc97b] font-medium hover:underline"
+                className="block  text-[#fdc97b] font-medium hover:underline"
               >
-                t.me/MrKofi
+                +60 16-309 4214
+              </a>
+              <a
+                className="block  text-[#fdc97b] font-medium hover:underline"
+              >
+                +60 18-327 2128
               </a>
             </GlareCard>
           </motion.div>
 
-          {/* Session */}
           <motion.div
             whileHover={{ scale: 0.9, rotate: 15, cursor: "pointer" }}
             className="flex justify-center"
-            onClick={() => {
-              navigator.clipboard.writeText(
-                "05b641b6617f1cef2bc14433b3f1274543e4c4f35f017eaadf5a10a695e7045f6e"
-              );
-              setSessionIDText("Copied!");
-              
-              // Reset the text after a delay
-              setTimeout(() => {
-                setSessionIDText("Copy");
-              }, 2000);
-            }}
           >
-            <GlareCard  className="flex flex-col justify-between items-center p-6 ">
+            <GlareCard className="flex flex-col justify-between items-center p-6 ">
             <MatrixEffect />
-              <div className="flex flex-col items-center" onClick={() => {
-    
-                // change the text with animation below here
-              }}>
-                <a href="">
-                  <div className="bg-gray-300 rounded-full hover:scale-110 transition transform ">
-                    <Image
-                      width={33}
-                      height={50}
-                      src={faSession}
-                      alt="Session"
-                    />
-                  </div>
-                </a>
-                <h3 className="text-xl font-semibold mt-4 mb-2">Session</h3>
-                <p className="text-gray-300 text-cente">
-                  Contact me via Session for secure and private communication.
+              <div className="flex flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="w-10 h-10 sm:w-12 sm:h-12 hover:scale-110 transition transform"
+                />
+                <h3 className="text-xl font-semibold mt-4 mb-2">Instagram</h3>
+                <p className="text-gray-300 text-center">
+                  Reach out to us on Instagram for quick support.
                 </p>
               </div>
-              <h3 onClick={() => {
-                navigator.clipboard.writeText("hello");
-                console.log("done")
-              }} className="font-bold mt-5"> Session ID: </h3>
-              <div
-                className="block mt-1 text-[#fdc97b] font-bold overflow-clip">
-                
-                <FontAwesomeIcon
-                  icon={faCopy}
-                  id="copy-text"
-                  className="w-3 h-3 sm:w-3 sm:h-3  hover:scale-110 transition transform"
-                />
-                {sessionIDText}
-              </div>
+              <h3 className="font-bold mt-5"> Instagram ID: </h3>
+              <a
+                className="block  text-[#fdc97b] font-medium hover:underline"
+              >
+                https://www.instagram.com
+              </a>
             </GlareCard>
           </motion.div>
+          
         </div>
       </div>
     </section>
