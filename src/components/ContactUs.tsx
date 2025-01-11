@@ -1,17 +1,13 @@
 "use client";
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { GlareCard } from "./ui/glare-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faCopy } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
-import faSession from "../assets/sessionIcon.png";
 import MatrixEffect from "./MatrixEffect";
 
 const ContactUs: React.FC = () => {
-  const [sessionIDText, setSessionIDText] = useState("Copy");
   return (
     <section
       id="contact"
