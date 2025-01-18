@@ -91,21 +91,17 @@ const Footer = () => {
 
           {/* Newsletter Section */}
           <div className="text-center md:text-left">
-            <h4 className="text-xl font-semibold text-white mb-4">Join Our Newsletter</h4>
-            <p className="text-sm text-gray-400 mb-4">Stay updated with the latest coffee trends, offers, and more.</p>
-            <form className="flex justify-center md:justify-start">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 text-gray-700 rounded-l-lg focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="px-6 py-2 bg-[#D8B99C] text-white rounded-r-lg hover:bg-[#b38f6f] transition duration-300"
-              >
-                Subscribe
-              </button>
-            </form>
+            <h4 className="text-xl font-semibold text-white mb-4">Send Us a Message</h4>
+            <p className="text-sm text-gray-400 mb-4">We&apos;d love to hear from you! Reach out to us on WhatsApp for any inquiries or feedback.</p>
+            <a
+              href="https://wa.me/1234567890" // Replace with your WhatsApp number
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline px-6 py-2  text-white font-semibold rounded-lg shadow-lg bg-gradient-to-r from-[#7b4b3a] via-[#a76f53] to-[#d4a373] hover:from-[#a76f53] hover:to-[#7b4b3a]transition duration-300"
+            >
+              Message Us on WhatsApp
+            </a>
+            
           </div>
         </div>
 

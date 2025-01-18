@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { HeroSection } from "@/components/Herosection";
 import Ingredients from "@/components/Ingredients";
 import NavBar from "@/components/Navbar";
+import CoffeeProducts from "@/components/CoffeeProducts";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Ingredients/>
       <Benefits/>
       <ContactUs/>
+      <CoffeeProducts/>
       <Footer/>
     </div>
   );
