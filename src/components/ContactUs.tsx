@@ -121,7 +121,7 @@ const ContactUs: React.FC = () => {
         {/* WhatsApp Message Box */}
         <div className="mt-12 flex justify-center items-center">
           <div className="w-full sm:w-2/3">
-            <h3 className="text-2xl font-semibold mb-4 text-transparent bg-gradient-to-r from-[#7b4b3a] via-[#a76f53] to-[#d4a373] bg-clip-text text-center">
+            <h3 className="text-2xl font-semibold mb-4 text-white bg-clip-text text-center">
               Send us a message
             </h3>
             <div className="relative">
@@ -129,7 +129,7 @@ const ContactUs: React.FC = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type your message here..."
-                className="w-full p-4 pr-14 rounded-xl text-black bg-transparent border-2 border-amber-700 bg-clip-padding outline-none shadow-md placeholder-gray-700 resize-none"
+                className="w-full p-4 pr-14 rounded-xl text-white bg-transparent border-2 border-amber-700 bg-clip-padding outline-none shadow-md placeholder-gray-700 resize-none"
                 rows={3}
               />
               <div className="absolute -top-3 left-4 font-bold bg-[#a76f53] px-2 text-sm text-white rounded-full shadow">
