@@ -60,7 +60,7 @@ const Ingredients: React.FC = () => {
     <div className="bg-gradient-radial from-[#1d130d] to-black text-gray-100 py-12 px-6">
       <div className="max-w-[1200px] mx-auto">
         {/* Title Section */}
-        <h1 className="text-4xl font-bold text-center mb-8 text-white">
+        <h1 className="text-4xl font-bold text-center mb-8 text-white mt-10">
           Ingredients That Make It Special
         </h1>
         <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">

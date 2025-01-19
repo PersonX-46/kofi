@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import coffeeImage from "../assets/logo2.png"; // Replace with your coffee image
+import coffeeImage from "../assets/logo2.jpeg"; // Replace with your coffee image
 import { motion } from "framer-motion";
 import TypeWriter from "./TypeWriter";
 
@@ -13,18 +13,6 @@ export const HeroSection = () => {
         style={{ backgroundImage: "url('/path-to-coffee-beans-background.jpg')" }}
       />
 
-      {/* Quote Section */}
-      <motion.div
-        className="relative z-10 text-center px-4 mb-10"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-      >
-        <p className="text-4xl sm:text-5xl md:text-6xl font-extrabold italic text-white mt-7 mb-10">
-          &quot;Power up your day with every sip&quot;
-        </p>
-      </motion.div>
-
       {/* Hero Content */}
       <div className="relative flex flex-col lg:flex-row items-center max-w-7xl mx-auto gap-10">
         {/* Coffee Image */}
@@ -34,14 +22,15 @@ export const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
         >
-          <div className="relative flex items-center justify-center w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 border-[6px] border-[#a87449] rounded-full shadow-lg shadow-[#a87449]/50">
+          <div className="relative flex items-center justify-center w-60 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[400px] lg:w-96 lg:h-[480px] border-[6px] border-[#a87449] rounded-lg shadow-lg shadow-[#a87449]/50">
             <Image
               src={coffeeImage}
               alt="Hero Coffee Image"
-              className="object-cover rounded-full"
+              className="object-cover rounded-lg"
               fill
             />
           </div>
+
         </motion.div>
 
         {/* Hero Text */}
