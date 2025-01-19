@@ -94,7 +94,7 @@ const Footer = () => {
             <h4 className="text-xl font-semibold text-white mb-4">Send Us a Message</h4>
             <p className="text-sm text-gray-400 mb-4">We&apos;d love to hear from you! Reach out to us on WhatsApp for any inquiries or feedback.</p>
             <a
-              href="https://wa.me/1234567890" // Replace with your WhatsApp number
+              href="https://wa.me/60163094214" // Replace with your WhatsApp number
               target="_blank"
               rel="noopener noreferrer"
               className="inline px-6 py-2  text-white font-semibold rounded-lg shadow-lg bg-gradient-to-r from-[#7b4b3a] via-[#a76f53] to-[#d4a373] hover:from-[#a76f53] hover:to-[#7b4b3a]transition duration-300"
