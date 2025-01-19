@@ -6,12 +6,24 @@ import TypeWriter from "./TypeWriter";
 
 export const HeroSection = () => {
   return (
-    <div className="relative bg-gradient-radial from-[#1d130d] to-black text-white min-h-screen flex items-center justify-center px-4">
+    <div className="relative bg-gradient-radial from-[#1d130d] to-black text-white min-h-screen flex flex-col items-center justify-center px-4 pt-20">
       {/* Background Coffee Vibes */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: "url('/path-to-coffee-beans-background.jpg')" }}
       />
+
+      {/* Quote Section */}
+      <motion.div
+        className="relative z-10 text-center px-4 mb-10"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
+        <p className="text-4xl sm:text-5xl md:text-6xl font-extrabold italic text-white mt-7 mb-10">
+          "Power up your day with every sip"
+        </p>
+      </motion.div>
 
       {/* Hero Content */}
       <div className="relative flex flex-col lg:flex-row items-center max-w-7xl mx-auto gap-10">
@@ -68,4 +80,7 @@ export const HeroSection = () => {
     </div>
   );
 };
+
+
+
 
