@@ -21,7 +21,7 @@ export const HeroSection = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <p className="text-4xl sm:text-5xl md:text-6xl font-extrabold italic text-white mt-7 mb-10">
-          "Power up your day with every sip"
+          &quot;Power up your day with every sip&quot;
         </p>
       </motion.div>
 
