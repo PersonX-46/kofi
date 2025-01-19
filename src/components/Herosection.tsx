@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import coffeeImage from "../assets/coffee.png"; // Replace with your coffee image
+import coffeeImage from "../assets/logo2.png"; // Replace with your coffee image
 import { motion } from "framer-motion";
 import TypeWriter from "./TypeWriter";
 
@@ -8,10 +8,13 @@ export const HeroSection = () => {
   return (
     <div className="relative bg-gradient-radial from-[#1d130d] to-black text-white min-h-screen flex items-center justify-center px-4">
       {/* Background Coffee Vibes */}
-      <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/path-to-coffee-beans-background.jpg')" }} />
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: "url('/path-to-coffee-beans-background.jpg')" }}
+      />
 
       {/* Hero Content */}
-      <div className="relative  flex flex-col lg:flex-row items-center max-w-7xl mx-auto gap-10">
+      <div className="relative flex flex-col lg:flex-row items-center max-w-7xl mx-auto gap-10">
         {/* Coffee Image */}
         <motion.div
           className="relative"
@@ -19,19 +22,19 @@ export const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
         >
-          <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 border-[6px] border-[#a87449] rounded-full shadow-lg shadow-[#a87449]/50">
+          <div className="relative flex items-center justify-center w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 border-[6px] border-[#a87449] rounded-full shadow-lg shadow-[#a87449]/50">
             <Image
               src={coffeeImage}
               alt="Hero Coffee Image"
-              
               className="object-cover rounded-full"
+              fill
             />
           </div>
         </motion.div>
 
         {/* Hero Text */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-5 mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-5 mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0ea5ea] to-[#0bd1d1]">
               <TypeWriter />
             </span>
@@ -42,7 +45,8 @@ export const HeroSection = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            Brewed with passion and love, we bring you the finest blends to energize your mornings, uplift your afternoons, and soothe your evenings. Let&apos;s sip, savor, and share the joy of coffee.
+            Brewed with passion and love, we bring you the finest blends to energize your mornings,
+            uplift your afternoons, and soothe your evenings. Let&apos;s sip, savor, and share the joy of coffee.
           </motion.p>
 
           {/* Call-to-Action Button */}
@@ -64,3 +68,4 @@ export const HeroSection = () => {
     </div>
   );
 };
+
