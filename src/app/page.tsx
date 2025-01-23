@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/Herosection";
 import Ingredients from "@/components/Ingredients";
 import NavBar from "@/components/Navbar";
 import CoffeeProducts from "@/components/CoffeeProducts";
+import { TikTokVideoGallery } from "@/components/Tiktok";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Benefits/>
       <ContactUs/>
       <CoffeeProducts/>
+      <TikTokVideoGallery/>
       <Footer/>
     </div>
   );

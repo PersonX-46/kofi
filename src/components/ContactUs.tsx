@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import { GlareCard } from "./ui/glare-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import MatrixEffect from "./MatrixEffect";
 import { useState } from "react";
 
@@ -30,7 +30,7 @@ const ContactUs: React.FC = () => {
 
         {/* Contact Info Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Email */}
+          {/* TikTok */}
           <motion.div
             whileHover={{ scale: 0.9, rotate: 15, cursor: "pointer" }}
             className="flex justify-center"
@@ -39,33 +39,34 @@ const ContactUs: React.FC = () => {
               <MatrixEffect />
               <div className="flex flex-col items-center">
                 <a
-                  href="mailto:thelonelyblogger@proton.me"
+                  href="https://www.tiktok.com/@mrkofi969" // Replace with your TikTok profile link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="align-top"
                 >
                   <FontAwesomeIcon
-                    icon={faEnvelope}
+                    icon={faTiktok}
                     className="w-10 h-10 sm:w-12 sm:h-12 hover:scale-110 transition transform"
                   />
                 </a>
-                <h3 className="text-xl font-semibold mt-4 mb-2">Email</h3>
+                <h3 className="text-xl font-semibold mt-4 mb-2">TikTok</h3>
                 <p className="text-gray-300 text-center">
-                  Have any questions? Shoot me an email and we&apos;ll get back
-                  to you.
+                  Check out our TikTok videos and follow us for more updates.
                 </p>
               </div>
-              <h3 className="font-bold"> Email ID: </h3>
+              <h3 className="font-bold"> TikTok ID: </h3>
               <a
-                href="mailto:thelonelyblogger@proton.me"
-                className="block mt-1 text-[#fdc97b] font-medium hover:underline"
+                href="https://www.tiktok.com/@mrkofi" // Replace with your TikTok profile link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-1 text-[#fdc97b] font-medium hover:underline z-10"
               >
-                mrkofi@gmail.com
+                @mrkofi969
               </a>
             </GlareCard>
           </motion.div>
 
-          {/* Telegram */}
+          {/* Phone */}
           <motion.div
             whileHover={{ scale: 0.9, rotate: 15, cursor: "pointer" }}
             className="flex justify-center"
@@ -92,6 +93,7 @@ const ContactUs: React.FC = () => {
             </GlareCard>
           </motion.div>
 
+          {/* Instagram */}
           <motion.div
             whileHover={{ scale: 0.9, rotate: 15, cursor: "pointer" }}
             className="flex justify-center"
@@ -110,6 +112,9 @@ const ContactUs: React.FC = () => {
               </div>
               <h3 className="font-bold mt-5"> Instagram ID: </h3>
               <a
+                href="https://www.instagram.com" // Replace with your Instagram profile link
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-[#fdc97b] font-medium hover:underline"
               >
                 https://www.instagram.com
@@ -152,8 +157,6 @@ const ContactUs: React.FC = () => {
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   );
