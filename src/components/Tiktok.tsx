@@ -10,7 +10,7 @@ export const TikTokVideoGallery = () => {
   ];
 
   // Optional: If you want to track selected videos
-  const [activeVideo, setActiveVideo] = useState(0);
+  //const [activeVideo, setActiveVideo] = useState(0);
 
   return (
     <div className="bg-gradient-radial from-[#1d130d] to-black text-white py-16 px-4">
